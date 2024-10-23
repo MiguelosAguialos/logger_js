@@ -12,7 +12,7 @@ var file = new winston.transports.DailyRotateFile({
     dirname: './log',
     auditFile: true,
     zippedArchive: true,
-    maxFiles: 10,
+    maxFiles: '31d',
 });
 
 const logger = winston.createLogger({
